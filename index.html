@@ -1,0 +1,71 @@
+<!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+URL: https://flowbite.com/docs/components/typography/ 
+-->
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+
+<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+  <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+      <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <header class="mb-4 lg:mb-6 not-format">
+              <address class="flex items-center mb-6 not-italic">
+                  <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                      <img class="mr-4 w-16 h-16 rounded-full" src="https://i.ibb.co/23YxBPh/IMG-20231217-124717-transformed.jpg" alt="Jese Leos">
+                      <div>
+                          <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Siddharth</a>
+                          <p class="text-base text-gray-500 dark:text-gray-400">Content Writer in Technology</p>
+                          <p class="text-base text-gray-500 dark:text-gray-400"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Dec. 20, 2023</time></p>
+                      </div>
+                  </div>
+              </address>
+              <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Beeper Mini’s latest iMessage for Android setup requires a Mac</h1>
+          </header>
+        <figure><img src="https://s.yimg.com/ny/api/res/1.2/Nrk_nc2iGX_LZrMUhjOp.g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2023-12/4d391390-9ea6-11ee-bffd-d7a4b34c9bd2" alt="">
+              <figcaption>Credit: Engadget</figcaption>
+          </figure>
+        <br>
+          <p class="lead">Beeper Mini has a new “fix” coming for its broken iMessage on Android integration. However, the new method requires Mac access to send (and intermittently resend) “registration data” from an Apple-made desktop or laptop, calling into question how far users will stick with the app. The company says you’ll see the new functionality in an update to the Beeper Cloud Mac app on Wednesday, December 19.</p>
+        <br>
+        <p>Beeper’s current method requires identification info (“registration data”) sent from a physical Mac computer to authenticate iMessage connections on Android. The company’s latest plans now shift the Mac onus to users. “We have, up until now, been using our own fleet of Mac servers to provide this,” a Beeper spokesperson wrote in the app’s Reddit community. “Unfortunately, this has proven to be an easy target for Apple because thousands of Beeper users were using the same registration data.”</p>
+          
+        <br>
+          <p>Beeper Mini launched to much fanfare, promising — and delivering — seamless iMessage chats on Android with only a phone number. However, in what seemed like an inevitable move, Apple squashed the app’s core functionality, forcing the startup to deploy new workarounds as it entered a cat-and-mouse game with the $3 trillion corporation.</p>
+          
+        <br>
+        <p>Beeper says tomorrow’s update for Beeper Cloud on Mac will generate unique “1:1” registration data for individuals rather than thousands of accounts drawing on the same validation info on Beeper’s servers. The company says the new approach “makes the connection very reliable.” However, the registered Mac will still need to “periodically regenerate” the data after you’ve connected a Mac to Beeper Cloud, so it can’t just be a one-and-done connection to the computer.</p>
+        <br>
+        <p>If you don’t have a Mac and want to use Beeper Mini, the company says you can ask a friend to use their Apple computer for validation. “In our testing, 10-20 iMessage users can safely use the same registration data,” the company posted. The spokesperson said the update will restore chatting on iMessage with your Apple ID email if you don’t already have a phone number tied to your account.</p>
+        <br>     
+<figure><img src="https://s.yimg.com/ny/api/res/1.2/0BRW3.OYpgDivfHbnwjL3A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNjtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2023-12/cac291a0-9ea7-11ee-b7f4-858a220abdb4" alt="">
+              <figcaption>Credit: Engadget</figcaption>
+          </figure>
+        
+        <br>
+        It remains to be seen if Beeper Mini’s users will stick around for the more cumbersome setup. “At this point, I am willing to wait for Apple to come out with RCS support,” Redditor u/OldSalukiBandDude commented, referring to Apple’s promised support for the standard that will bring more iMessage-like features to chats between iPhones and Android handsets. “‘Fix’ is a strong word,” u/PredatorRanger added. “This is more like half-assing a workaround that requires more on the user’s end.”
+        <br><br>
+        Others were more open-minded about Beeper’s persistence in the face of Apple’s moves to squash the service. “Ppl are so whiney,” u/Waders411111 wrote. “This is a great bandaid to stop the bleeding and let ppl use beeper as intended.. as a way to integrate all your message apps in one place.” U/bb147 concurred: “Not the most user friendly fix but I am happy to have stable consolidated chats again even if I have to install something on a Mac, at least for now.”
+        
+        <br><br>
+        
+        In addition to the new setup method, Beeper says it’s open-sourcing its full iMessage bridge and the Mac code that generates registration data. The company linked to a Github tool that allows users to self-host the bridge, bypassing the company’s servers for those who want extra assurance.
